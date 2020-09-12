@@ -10,7 +10,7 @@ comments: true
 
 <p></p>
 
-<a href = 'https://xinyueyu16.github.io/Resume/'><h4>我的简历</h4></a>
+<a href = 'https://xinyueyu16.github.io/Resume/'>我的简历</a>
 
 <!--
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
