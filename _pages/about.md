@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 了解我
+title: 关于我
 permalink: /about
 comments: true
 ---
