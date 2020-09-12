@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  新冠疫情期间基于新闻主题模型的Twitter情绪分析
-author: Willa
+author: Willa Y
 categories: [ 数据分析, 可视化 ]
 tags: [NLP, 情绪分析, 主题模型, Tableau]
 image: assets/images/1.jpg
