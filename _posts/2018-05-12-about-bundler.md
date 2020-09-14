@@ -5,6 +5,6 @@ author: willa
 categories: [ Jekyll ]
 image: assets/images/2.jpg
 hidden: true
-featured: true
+featured: false
 ---
 `test`
