@@ -9,8 +9,8 @@ comments: true
 <div class="col-md-8 pr-5">
 
 <p></p>
-- <a href = 'https://github.com/XinyueYu16/'>我的Github</a>
-- <a href = 'https://xinyueyu16.github.io/Resume/'>我的简历</a>
+<li> <a href = 'https://github.com/XinyueYu16/'>我的Github</a></li>
+<li> <a href = 'https://xinyueyu16.github.io/Resume/'>我的简历</a></li>
 
 <!--
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
