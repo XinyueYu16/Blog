@@ -8,6 +8,9 @@ featured: true
 ---
 
 "__可视化的核心不在于靓丽的视觉设计，而在于传递信息的效率。__"
+ 
+ <br />
+ <br />
 
 ## Tableau仪表盘设计 —— 滚石：史上最伟大的100张专辑
 
@@ -32,11 +35,13 @@ __分析反思：__
   - 如果要充实数据维度的话其实可以引入`Spotify Analytics`的数据，如专辑平均`energy`等。
   - 另外，在为专辑匹配乐手国籍的时候，我是凭借记忆+Wiki搜索手动增加的信息。其实 __爬虫+手动调整爬虫结果__ 会更有效率。
 
-
+ <br />
+ <br />
+ 
 ### 仪表盘设计
-
-![alt text](https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone1.png)
 #### Tab 1: 
+![alt text](https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone1.png)
+
 
 第一个版面用来交代可视化项目的主题与背景。包括对滚石的介绍，和可视化分析的问题：
 - 哪个时代的专辑最受欢迎？
@@ -47,9 +52,12 @@ __分析反思：__
 __改进分析：__
 - 字太多+太小了：可视化如同PPT，在表达方面追求以视觉表述代替文字，不得不写的文字则力求精简。
 
+<br />
+<br />
 
+#### Tab 2:  
 ![alt text](https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone2.png)
-#### Tab 2: 
+
 
 第二个版面用来交代最受欢迎的时代及类型。在这个部分我较为满意的设计有：
 - 视觉形象：在柱形图上叠加散点图，并将散点图的形状替换为音符，在呈现音乐主题的内容时非常贴切；
@@ -67,9 +75,12 @@ __改进分析：__
 
     字体大小直接和数据比例相关，非常直观。
 
-
-![alt text](https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone3.png)
+<br />
+<br />
+ 
 #### Tab 3: 
+![alt text](https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone3.png)
+
 
 第三个版面用来交代最受欢迎的乐手国籍及乐手。在这个部分我较为满意的设计有：
 - 互动效果丰富：主要是在点击Beatles专辑的时候能切换不同的封面 ^ ^ 
