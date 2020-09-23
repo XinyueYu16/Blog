@@ -1,5 +1,5 @@
 # Check this out!
-[My Homepage](https://xinyueyu16.github.io/)
+[My Homepage](https://xinyueyu16.github.io/blog)
 
 
 Based on __Mediumish - Jekyll Theme__
