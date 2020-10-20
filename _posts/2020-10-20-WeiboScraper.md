@@ -11,15 +11,21 @@ featured: true
 
 ![清洗后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
-后续代展开： 
+该项目为微博项目中 **获取数据** 的第一步，后续代展开项目： 
 
-- **微博分析** ：预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
+- **微博分析及可视化** ：预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
 
 
 
-**爬虫框架**
+### 爬虫框架
+- 提供网页url
+- 获取网页源代码
+- 网页存储
+- 读取网页
+- 网页解析并分析
+- 清洗数据并存储
 
-1. **提供网页url**：url选择非触屏手机网页版weibo，因为电脑版网页及手机触屏版网页使用javascript动态网页，需要使用selenium爬取。为了方便操作，优先选择只需requests就可爬取的非触屏手机网页版。
+1   **提供网页url**：url选择非触屏手机网页版weibo，因为电脑版网页及手机触屏版网页使用javascript动态网页，需要使用selenium爬取。为了方便操作，优先选择只需requests就可爬取的非触屏手机网页版。
 
 ```python 
 user = 'yesung'
@@ -27,8 +33,8 @@ user_url = 'https://weibo.cn/u/5029399338'
 maxp = 212
 ```
 
-2. **获取网页源代码**：使用requests module中的Session.get，提供自己的微博cookie，模拟真实浏览器操作。
-3. **网页存储**：将所有网页以f'{user} {page}.html'的形式存储到'\\user\\user grab time'的文件夹里。其中user grab time的文件夹创立是为了分别针对同一用户在不同时间点做出的多次爬取，比如当需要分析该用户在一段时间内粉丝，或某微博的转赞评涨幅（“发大水”程度）时。
+2   **获取网页源代码**：使用requests module中的Session.get，提供自己的微博cookie，模拟真实浏览器操作。
+3   **网页存储**：将所有网页以f'{user} {page}.html'的形式存储到'\\user\\user grab time'的文件夹里。其中user grab time的文件夹创立是为了分别针对同一用户在不同时间点做出的多次爬取，比如当需要分析该用户在一段时间内粉丝，或某微博的转赞评涨幅（“发大水”程度）时。
 
 ```python
 def store_user_pages(user_name, user_url, maxp, minp = 1):
@@ -72,7 +78,7 @@ def store_user_pages(user_name, user_url, maxp, minp = 1):
         minp += 1
 ```
 
-4. **读取网页**：既然网页存在不同的文件夹里，则读取网页时必须首先使用get_folders()确定有哪些可选的文件夹，选定一个文件夹`folder_idx`，再读取其中的全部。
+4   **读取网页**：既然网页存在不同的文件夹里，则读取网页时必须首先使用get_folders()确定有哪些可选的文件夹，选定一个文件夹`folder_idx`，再读取其中的全部。
 
 ```python
 def get_folders(user):
@@ -88,7 +94,7 @@ def get_folders(user):
 folder_idx = 0 # you choose
 ```
 
-5. **网页解析并分析**：使用beautifulsoup解析为soup，提取有用部分包括：
+5   **网页解析并分析**：使用beautifulsoup解析为soup，提取有用部分包括：
       -  用户信息`get_basic_info(user, folder_idx)`：用户名，基本信息，简介，粉丝数，关注，微博数量，微博总页数；
       
       <br>
@@ -198,7 +204,7 @@ folder_idx = 0 # you choose
       ```
 
 
-6. **清洗数据并存储**：
+6   **清洗数据并存储**：
     - *时间类型转换* ：微博显示的时间中，非当年的年份以标准方式表示，同年微博以中文月日时表示，如'01月1日 15:14'表示2020年1月1日 15:14发出，而2019年的则表示为'2019-12-31 22:11:15'；
     - *float类型转换* ：从video到cc的倒数五列都被保存为了float，用astype改为int；
     - *提取tag数量* ：从content中用正则表达式r'\#\[0-9\w]'匹配tag，用finditer提取匹配次数；
