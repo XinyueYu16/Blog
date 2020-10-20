@@ -1,22 +1,21 @@
 ---
 layout: post
-title:  "微博爬虫练习"
+title:  "微博项目：爬取用户微博内容"
 author: willa
 image: "https://i.loli.net/2020/10/20/GKyal4ZAgirxBX5.jpg"
 category: [爬虫, 项目经历]
 featured: true
 ---
 
-**一个微博爬虫练习 + 微博内容分析**
-
-- **微博爬虫** ：提供待爬对象url，获取该对象指定页数的weibo（包括内容、内容形式、发送时间、发送平台、转赞评等）。
-
-- **微博分析** ：待开展，预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
+**微博项目中的爬虫练习**：提供待爬对象url，获取该对象指定页数的weibo（包括内容、内容形式、发送时间、发送平台、转赞评等）。
 
 ![清洗后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
+后续代展开： 
 
-## 微博爬虫
+- **微博分析** ：预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
+
+
 
 **爬虫框架**
 
