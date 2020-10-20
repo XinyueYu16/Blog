@@ -4,7 +4,7 @@ title:  "Tableau仪表盘设计 —— 滚石：史上最伟大的100张专辑"
 author: willa
 image: "https://raw.githubusercontent.com/XinyueYu16/blog/master/assets/images/rollingstone/rollingstone1.png"
 category: [ 可视化 ]
-featured: true
+featured: false
 ---
 
 "__可视化的核心不在于靓丽的视觉设计，而在于传递信息的效率。__"
