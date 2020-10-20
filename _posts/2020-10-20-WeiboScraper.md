@@ -100,7 +100,8 @@ folder_idx = 0 # you choose
 ```
 
 5   **网页解析并分析**：使用beautifulsoup解析为soup，提取有用部分包括：
-      -  用户信息`get_basic_info(user, folder_idx)`：用户名，基本信息，简介，粉丝数，关注，微博数量，微博总页数；
+      
+- 用户信息`get_basic_info(user, folder_idx)`：用户名，基本信息，简介，粉丝数，关注，微博数量，微博总页数；
       
       <br>
       
@@ -131,9 +132,10 @@ folder_idx = 0 # you choose
                               'maxpage': maxpage})
           return basic_dict
       ```
-      
-      -  微博内容`read_user(user, folder_idx)`:  内容content，时间time，形式（有无视频video，有多少张图片photo），赞zan，转repo，评cc。
-      <br>
+
+- 微博内容`read_user(user, folder_idx)`:  内容content，时间time，形式（有无视频video，有多少张图片photo），赞zan，转repo，评cc。
+  
+  <br>
       
       ```python
       def read_user(user, folder_idx):
@@ -210,9 +212,12 @@ folder_idx = 0 # you choose
 
 
 6   **清洗数据并存储**：
-    - *时间类型转换* ：微博显示的时间中，非当年的年份以标准方式表示，同年微博以中文月日时表示，如'01月1日 15:14'表示2020年1月1日 15:14发出，而2019年的则表示为'2019-12-31 22:11:15'；
-    - *float类型转换* ：从video到cc的倒数五列都被保存为了float，用astype改为int；
-    - *提取tag数量* ：从content中用正则表达式r'\#\[0-9\w]'匹配tag，用finditer提取匹配次数；
+    
+- *时间类型转换* ：微博显示的时间中，非当年的年份以标准方式表示，同年微博以中文月日时表示，如'01月1日 15:14'表示2020年1月1日 15:14发出，而2019年的则表示为'2019-12-31 22:11:15'；
+    
+- *float类型转换* ：从video到cc的倒数五列都被保存为了float，用astype改为int；
+    
+- *提取tag数量* ：从content中用正则表达式r'\#\[0-9\w]'匹配tag，用finditer提取匹配次数；
     
     <br>
     
@@ -251,6 +256,7 @@ folder_idx = 0 # you choose
         with open(file_location + '\\data dictionary.txt') as f:
             f.write(get_data_dictionary()) # 保存数据词典
     ```
+    清洗后的微博内容数据框如下图：
     
     ![清洗后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
