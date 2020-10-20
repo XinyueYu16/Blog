@@ -2,7 +2,7 @@
 layout: post
 title:  "微博爬虫练习"
 author: willa
-image: "https://i.loli.net/2020/10/20/iqAFJ1OEVvchBUI.jpg"
+image: "https://i.loli.net/2020/10/20/GKyal4ZAgirxBX5.jpg"
 category: [爬虫, 项目经历]
 featured: true
 ---
