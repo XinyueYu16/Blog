@@ -15,7 +15,7 @@ featured: true
 
 ![清洗后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
-后续代展开项目包括： 
+后续待开展项目包括： 
 
 - **微博分析及可视化** ：预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
 
