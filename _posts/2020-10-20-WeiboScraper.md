@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "微博项目：爬取用户微博内容"
+title:  "微博项目（1）：爬取用户微博内容"
 author: willa
 image: "https://i.loli.net/2020/10/20/GKyal4ZAgirxBX5.jpg"
 category: [爬虫, 项目经历]
