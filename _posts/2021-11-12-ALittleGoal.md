@@ -22,5 +22,6 @@ featured: false
 ```bash
 git log --pretty=oneline 
 added202111132337(假装有40个字符) 读完前80页我已经知道的知识。
+added202111140016				finished_reading_n_reviwing_PEP8 
 ```
 
