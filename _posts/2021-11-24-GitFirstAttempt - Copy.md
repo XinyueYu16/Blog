@@ -2,7 +2,7 @@
 layout: post
 title:  "使用Git参与多人项目的第一次"
 author: willa
-image: "../assets/images/git_cheatsheet.jpeg"
+image: "https://img2.baidu.com/it/u=1848906865,844650420&fm=253&fmt=auto&app=138&f=JPG?w=667&h=500"
 category: [日常整理]
 featured: false
 ---
