@@ -4,7 +4,7 @@ title:  "误差分析的骚操作"
 author: willa
 image: "https://img1.baidu.com/it/u=3829756115,105839803&fm=26&fmt=auto"
 category: [日常整理]
-featured: false
+featured: true
 ---
 
 学习学习学习！
