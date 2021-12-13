@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "把Ctrl+Shift+Enter扣掉！"
+title:  "把Ctrl+Shift+Enter抠掉！"
 author: willa
 image: "https://img.alicdn.com/bao/uploaded/i3/720868847/O1CN016uCebq2FDyZsxrdm4_!!0-item_pic.jpg_500x500q90.jpg"
 category: [日常整理]
@@ -27,6 +27,7 @@ featured: false
 - 测试时：
   - **一 彳亍 一 彳亍**，慢慢运行，留意每行做的事，以及console的输出
   - 不要整段运行loop，**一 彳亍 一 彳亍**
+  - （等到测试完成，要保证代码可以ctrl + shift + enter一键运行）
 - 沟通时：
   - 设计读入/写出的部分重点交代
   - 报错时截全上下文及 traceback
